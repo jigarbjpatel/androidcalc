@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Basic Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="errmsg_max_digits">Maximum number of digits exceeded!</string>
+    <string name="errmsg_wrong_format">Wrong Format! Correct format is NUMBER OPERATOR NUMBER</string>    
+    <string name="errmsg_divide_by_zero">Invalid Operation - Divide by zero</string>
+    <string name="max_digits_allowed">15</string>
+    <string name="title_activity_enhanced">Enhanced Calculator</string>
+    
+    <string name="errmsg_wrong_format_generic">Wrong Format!</string>
+    <string name="errmsg_wrong_format_number_first">Wrong Format! Enter NUMBER before OPERATOR</string>
+    
+
+</resources>

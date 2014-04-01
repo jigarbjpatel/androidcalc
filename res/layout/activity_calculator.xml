@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<TableLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/calculatorTable"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:shrinkColumns="*"  
+    android:stretchColumns="*"
+    android:gravity="center">  
+    <TableRow  
+        android:id="@+id/outputRow"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent"  
+        android:gravity="center_horizontal">  
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:hint="0.0"
+            android:layout_weight="0.75"
+            android:gravity="right"
+            android:freezesText="true"
+            android:textIsSelectable="true"
+            ></TextView>
+         <Button
+             android:id="@+id/divButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="/"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onOperatorButtonClick"/>
+    </TableRow>  
+    <TableRow  
+        android:id="@+id/tableRow1"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/oneButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="1"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/twoButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="2"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/threeButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="3"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/multButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="*"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onOperatorButtonClick"/>
+    </TableRow>  
+    <TableRow  
+        android:id="@+id/tableRow2"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/fourButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="4"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/fiveButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="5"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/sixButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="6"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/minusButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="-"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onOperatorButtonClick"/>
+    </TableRow>  
+    <TableRow  
+        android:id="@+id/tableRow3"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/sevenButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="7"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/eightButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="8"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/nineButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="9"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/plusButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="+"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onOperatorButtonClick"/>
+    </TableRow> 
+    <TableRow  
+        android:id="@+id/tableRow4"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/zeroButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.50"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/dubZeroButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="00"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+       <Button
+             android:id="@+id/decButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="."
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "onDigitsButtonClick"/>
+    </TableRow>
+    <TableRow  
+        android:id="@+id/tableRow4"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/equalsButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="="
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.75"
+             android:onClick = "calculate"/>
+       <Button
+             android:id="@+id/clearButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="C"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.25"
+             android:onClick = "clear"/>
+    </TableRow> 
+    <TableRow  
+        android:id="@+id/tableRow4"  
+        android:layout_height="wrap_content"  
+        android:layout_width="match_parent">  
+       <Button
+             android:id="@+id/memPlusButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="M+"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.33"
+             android:onClick="onMemPlusClick"/>
+       <Button
+             android:id="@+id/memMinusButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="M-"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.33"
+             android:onClick="onMemMinusClick"/>
+       <Button
+             android:id="@+id/mrcButton"
+             android:layout_width="0px"
+             android:layout_height="wrap_content"
+             android:text="MRC"
+             android:layout_gravity="center_horizontal" 
+             android:layout_weight="0.33"
+             android:onClick="onMrcClick"/>
+    </TableRow> 
+</TableLayout>
